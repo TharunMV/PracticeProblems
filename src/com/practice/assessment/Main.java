@@ -17,5 +17,28 @@ public class Main {
         System.out.println(new MissingNumber().missingNumber());
         System.out.println("*****");
         System.out.println(ValidParentheses.isValid("(abc){}{}[]"));
+        System.out.println("*****");
+        System.out.println(WildcardMatch.isMatch("acdeb", "*a?d*b"));
+        System.out.println("*****");
+        String[] words = {
+                "CARS", "REPAID", "DUES", "NOSE", "SIGNED", "LANE",
+                "PAIRED", "ARCS", "GRAB", "USED", "ONES", "BRAG",
+                "SUED", "LEAN", "SCAR", "DESIGN"
+        };
+        GroupAnagrams.groupAnagrams(words);
+        System.out.println("*****");
+        System.out.println("\nLinked List Implementation");
+        System.out.println("**************************\n");
+        SinglyLinkedList myLinkedList = new SinglyLinkedList();
+        myLinkedList.insertFirst(5);
+        myLinkedList.insertFirst(6);
+        myLinkedList.insertFirst(7);
+        myLinkedList.insertFirst(1);
+        myLinkedList.insertLast(2);
+        myLinkedList.deleteFirst();
+        Node node=new Node();
+        node.data=7;
+        myLinkedList.deleteAfter(node);
+        myLinkedList.printLinkedList();
     }
 }
